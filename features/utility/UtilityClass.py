@@ -9,10 +9,8 @@ class UtilityClass:
     def launch_browser(self):
         self.driver = webdriver.Chrome(ConfigClass.filePath)
 
-
-
     def launch_app(self):
-        self.driver.get(ConfigClass.url)
+         self.driver.get(ConfigClass.url)
 
     def Maximize_browser(self):
         self.driver.maximize_window()
