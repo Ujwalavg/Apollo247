@@ -1,9 +1,9 @@
 Feature: PersonalCare
 Background:Personal Care Navigation
     Given Chrome is opened and  Apollo 24/7 is opened.
-       When user click on later button
-       When user click on  Pharmacy
-       When user click on later button
+       When User click on later button
+       When User click on  Pharmacy
+       When User click on later button
        When User click on Apollo Products
        When click on personal care and navigates to the landing page.
 
@@ -22,13 +22,13 @@ Background:Personal Care Navigation
 
        When User click on productImage
        Then It shows In Stock
-       When  User click on Add to cart
+       When User click on Add to cart
        Then It should display 1 pack in cart.
 
 
   Scenario Outline: To Validate  delivery Pincode is valid.
 
-       When user clicks on Select your location button.
+       When User clicks on Select your location button.
        When User  Click on delivery pincode on the  top of th personal care page.
        And  User enters  <Valid pincode number>
        And  User click on Submit button
@@ -39,7 +39,7 @@ Background:Personal Care Navigation
 
   Scenario Outline: To Validate delivery pincode is invalid.
 
-      When user clicks on Select your location button.
+      When User clicks on Select your location button.
       When User  Click on delivery pincode on the  top of th personal care page.
       And  User enters   <Invalid pincode number>
       And  User click on Submit button
