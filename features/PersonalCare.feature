@@ -2,10 +2,10 @@ Feature: PersonalCare
 Background:Personal Care Navigation
     Given Chrome is opened and  Apollo 24/7 is opened.
        When User click on later button
-       When User click on  Pharmacy
+       And User click on  Pharmacy
        When User click on later button
-       When User click on Apollo Products
-       When click on personal care and navigates to the landing page.
+       And User click on Apollo Products
+       When Click on personal care and navigates to the landing page.
 
     Scenario:To Validate that Special Offers link is clickable
 
@@ -28,8 +28,8 @@ Background:Personal Care Navigation
 
   Scenario Outline: To Validate  delivery Pincode is valid.
 
-       When User clicks on Select your location button.
-       When User  Click on delivery pincode on the  top of th personal care page.
+       When user clicks on Select your location button.
+       And User  Click on delivery pincode on the  top of th personal care page.
        And  User enters  <Valid pincode number>
        And  User click on Submit button
        Then It shows the  delivery pincode Uppalapadu 518002
@@ -39,10 +39,10 @@ Background:Personal Care Navigation
 
   Scenario Outline: To Validate delivery pincode is invalid.
 
-      When User clicks on Select your location button.
+      When user clicks on Select your location button.
       When User  Click on delivery pincode on the  top of th personal care page.
       And  User enters   <Invalid pincode number>
-      And  User click on Submit button
+      When  User click on Submit button
       Then It shows the error messageerror message like"Sorry, we are not servicing in your area currently. Call 1860 500 0101 for pharmacy store nearby."
 
       Examples:
