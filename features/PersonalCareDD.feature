@@ -1,3 +1,4 @@
+@FunctionalTests
 Feature: Personal Care
      Scenario: To Validate  delivery Pincode is valid.
        Given Chrome is opened and  Apollo 24/7 app is opened.

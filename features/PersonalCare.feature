@@ -1,3 +1,4 @@
+@FunctionalTests
 Feature: PersonalCare
 Background:Personal Care Navigation
     Given Chrome is opened and  Apollo 24/7 is opened.
